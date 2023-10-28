@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomRelativeLayout"
+    android:background="@drawable/fon_layout"
+    tools:context=".TaxiActivity"
+    android:id="@+id/activity_taxi">
+
+    <ListView
+        android:id="@+id/order_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:visibility="visible">
+
+    </ListView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/order_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order_b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Откуда"
+        android:inputType="textMultiLine"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textFieldOrderA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="25"
+            tools:ignore="TouchTargetSizeCheck"
+            android:visibility="gone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/order_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order_price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Куда"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textFieldOrderB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="25"
+            android:visibility="gone"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/order_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_order"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Стоимость поздки"
+        android:inputType="textMultiLine"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textFieldOrderPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="10"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/safety_text"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/saf_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_saf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="@string/dear_user"
+            android:textColor="#F9F001"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_saf"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/saf_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="@string/saf_text"
+            android:textAlignment="center"
+            android:textColor="#F9F001"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/saf_text_view"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:text="@string/saf_text_view"
+            android:textAlignment="center"
+            android:textColor="#F9F001"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_order_true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat"
+        android:text="Заказать"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        app:fabSize="mini" />
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat"
+        android:text="Заказать авто"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        app:fabSize="mini" />
+
+</RelativeLayout>
+

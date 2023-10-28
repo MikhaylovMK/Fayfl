@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomRelativeLayout"
+    android:background="@drawable/fon_layout">
+
+    <ImageView
+        android:id="@+id/imageViewFayfl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/i_kon" />
+
+    <TextView
+        android:id="@+id/profile"
+        style="@style/CustomStatusTextView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:textColor="#F9F001" />
+
+    <TextView
+        android:id="@+id/textWelcomeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat_alternates_italic"
+        android:text="@string/textWelcomeView"
+        android:textColor="#F9F001"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/textWelcomeView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_alternates_italic"
+        android:text="@string/textWelcome"
+        android:textAlignment="center"
+        android:textColor="#F9F001"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/phone_auth_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/field_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_phone_number"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:textColor="#F9F001"
+                    android:textColorHint="#F9F001"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/field_verification_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_verification_code"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:textColor="#F9F001"
+                    android:textColorHint="#F9F001"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/button_start_verification"
+                    style="?android:attr/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/start_phone_auth"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+                <Button
+                    android:id="@+id/button_verify_phone"
+                    style="?android:attr/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/verify_phone_auth"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+                <Button
+                    android:id="@+id/button_resend"
+                    style="?android:attr/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/resend_phone_auth"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/buttonTaxi"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/buttonChat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/taxi"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/buttonChat"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/buttonSale"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/chat"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/buttonSale"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/sale"
+        android:visibility="gone" />
+
+</RelativeLayout>

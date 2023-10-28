@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Fayfl</string>
+
+
+    <string name="label_google_sign_in">Firebase + Sign in Google</string>
+    <string name="label_facebook_login">Firebase + Facebook login</string>
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="label_email_password">Email/password authentication</string>
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="label_phone_auth">Phone authentication</string>
+    <string name="label_manage_user">User management</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="create_account">Register</string>
+    <string name="sign_out">Exit</string>
+    <string name="disconnect">Disable</string>
+    <string name="loading">Loading…</string>
+    <string name="signed_out">Came out</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_photo">Photo</string>
+
+    <string name="logout">Go out?</string>
+    <string name="anonymous_sign_in">Anonymous Login</string>
+    <string name="account_link">Linking an account</string>
+    <string name="account_link_btn">Link account</string>
+    <string name="title_provider">User\'s provider</string>
+    <string name="title_profile">User\'s profile</string>
+    <string name="title_update_profile">Update User\'s profile</string>
+    <string name="title_update_email">Update User\'s email</string>
+    <string name="title_update_password">Update User\'s password</string>
+    <string name="title_send_password_reset">Send password reset</string>
+    <string name="title_delete_user">Delete user</string>
+    <string name="updated">%s updated.</string>
+    <string name="verify">Check</string>
+
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">+7 Phone number </string>
+    <string name="hint_verification_code">Verification code</string>
+    <string name="status_verification_succeeded">Verification was successful</string>
+    <string name="status_sign_in_failed">Login failed</string>
+    <string name="instant_validation">(instant check)</string>
+    <string name="firebase_status_fmt">Firebase user : %s</string>
+    <string name="phone">phone: %s</string>
+    <string name="textWelcome"> The application was created exclusively for residents and guests of the city of Nyurba. If you are not, please delete the application immediately.</string>
+    <string name="textWelcomeView">Welcome</string>
+    <string name="completion_of_the_check">\"completion of the check: \"</string>
+    <string name="about_verification_failure" translatable="false">\"about verification failure: \"</string>
+    <string name="Wrong_phone_number">Wrong phone number.</string>
+    <string name="saf_text">The Fayfl administrator cannot provide you with complete security when using this application, as it does not control drivers and passengers. Any disputes must be resolved between the driver and the passenger without the involvement of the Fayfl administrator. By using this application, you agree to all Fayfl terms and conditions.</string>
+    <string name="saf_text_view">Be careful. Security depends only on ourselves.</string>
+    <string name="dear_user" translatable="false">Dear user!</string>
+</resources>

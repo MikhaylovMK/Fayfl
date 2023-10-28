@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "280077747367",
+    "firebase_url": "https://fayfl-295bd-default-rtdb.firebaseio.com",
+    "project_id": "fayfl-295bd",
+    "storage_bucket": "fayfl-295bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280077747367:android:8e1d5dc7a827aeaf2c8782",
+        "android_client_info": {
+          "package_name": "com.example.fayfl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280077747367-hqcma8vopi39kld3rnhicb63d9t5937o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fayfl",
+            "certificate_hash": "96193e78f8cf3383af88b31c2cc176b9ed2d4328"
+          }
+        },
+        {
+          "client_id": "280077747367-1ldlm3t79d9qvgim424cifn9v0vhr1q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhA3D_Uzw0CxAAlyRjf4lf_oF3swZx6CQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113983550662041121090",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

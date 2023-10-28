@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_700"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/order_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:text="number_user"
+        android:textStyle="normal|bold"
+        android:textColor="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="data"
+        android:textColor="@color/white"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/the_cost_of_travel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/order_where"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/the_cost_of_travel"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/order_to_where"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/order_where"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>

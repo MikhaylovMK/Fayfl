@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Fayfl</string>
+
+
+    <string name="label_google_sign_in">Firebase + Войти Google</string>
+    <string name="label_facebook_login">Firebase + Логин в фейсбук</string>
+    <string name="label_twitter_login">Firebase + Твиттер Войти</string>
+    <string name="label_email_password">Аутентификация по электронной почте/паролю</string>
+    <string name="label_anonymous_auth">Анонимная аутентификация</string>
+    <string name="label_phone_auth">Аутентификация телефона</string>
+    <string name="label_manage_user">Управление пользователями</string>
+
+    <string name="sign_in">Войти</string>
+    <string name="create_account">Регистрация</string>
+    <string name="sign_out">Выход</string>
+    <string name="disconnect">Отключить</string>
+    <string name="loading">Загрузка…</string>
+    <string name="signed_out">Выйти</string>
+
+    <string name="hint_email">Электронная почта</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_photo">Фото</string>
+
+    <string name="logout">Выйти?</string>
+    <string name="anonymous_sign_in">Анонимный вход</string>
+    <string name="account_link">Привязка учетной записи</string>
+    <string name="account_link_btn">Связать аккаунт</string>
+    <string name="title_provider">Пользователь\'s провайдер</string>
+    <string name="title_profile">Пользователь\'s профиль</string>
+    <string name="title_update_profile">Обновить пользователя\'s профиль</string>
+    <string name="title_update_email">Обновить пользователя\'s электронная почта</string>
+    <string name="title_update_password">Обновить пользователя\'s пароль</string>
+    <string name="title_send_password_reset">Отправить сброс пароля</string>
+    <string name="title_delete_user">Удалить пользователя</string>
+    <string name="updated">%s обновлен.</string>
+    <string name="verify">Проверять</string>
+
+    <string name="start_phone_auth">Получить</string>
+    <string name="verify_phone_auth">Отправить</string>
+    <string name="resend_phone_auth">Повторить</string>
+    <string name="hint_phone_number">+7 Номер телефона </string>
+    <string name="hint_verification_code">Проверочный код</string>
+    <string name="status_verification_succeeded">Проверка прошла успешно</string>
+    <string name="status_sign_in_failed">Ошибка входа</string>
+    <string name="instant_validation">(мгновенная проверка)</string>
+    <string name="firebase_status_fmt">Пользователь Firebase : %s</string>
+    <string name="phone">телефон: %s</string>
+    <string name="textWelcome">Приложение создано исключительно для жителей и гостей города Нюрба. Если вы не являетесь таковым, просим немедленно удалить приложение.</string>
+    <string name="textWelcomeView">Добро пожаловать!</string>
+    <string name="completion_of_the_check">\"завершение проверки: \"</string>
+    <string name="Wrong_phone_number">Неверный номер телефона.</string>
+    <string name="saf_text">Администратор Fayfl не может обеспечить вам полную безопасность при использовании данного приложения, так как не контролирует водителей и пассажиров. Любые спорные ситуации должны решатся между водителем и пассажиром без привлечения администратора Fayfl. Пользуясь данным приложением, вы соглашаетесь со всеми условиями и правилами Fayfl.</string>
+    <string name="saf_text_view">Будьте бдительны. Безопасность зависит только от нас самих.</string>
+    <string name="dear_user" translatable="false">Уважаемый пользователь!</string>
+</resources>

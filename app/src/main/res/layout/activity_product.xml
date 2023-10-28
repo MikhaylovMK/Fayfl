@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_layout"
+    tools:context=".Sale.ProductActivity">
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/product_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/photo_sale"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/product_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Номер телефона"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/product_price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Описание товара"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_add_new_product"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Стоимость товара"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_add_new_product"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Добавить товар"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+    <TextView
+        android:id="@+id/warning_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:textColor="#F9F001"
+        android:text="Внимание!" />
+
+    <TextView
+        android:id="@+id/warning_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warning_text"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#F9F001"
+        android:text="Ваше  объявление будет автоматически удалено спустя 30 дней с момента создания.
+Для досрочного снятия объявления обратитесь к администратору Fayfl_official (Telegram).
+" />
+
+</RelativeLayout>
